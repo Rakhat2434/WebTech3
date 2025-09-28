@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.page-links {
+  background: #1f1f1f;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+.page-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+.page-links a:hover {
+  color: #fff;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+.portfolio-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #fff;
+}
+
+.portfolio-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  flex: 1;
+  padding: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.project-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+a.button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+a.button:hover {
+  background: #555;
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.project-card p {
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+.project-card button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.project-card button:hover {
+  background: #555;
+}
+
+/* Sidebar */
+.portfolio-sidebar {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.portfolio-sidebar h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.portfolio-sidebar p {
+  color: #bbb;
+}
+
+.portfolio-footer {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  color: #bbb;
+}
